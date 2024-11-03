@@ -12,7 +12,7 @@ from PIL import Image
 from define_model import define_model
 
 # Paths
-images_path = 'data/Flickr8k_Dataset'
+images_path = 'data/Flicker8k_Dataset'
 captions_path = 'data/Flickr8k.token.txt'
 features_path = 'data/features.pkl'
 tokenizer_path = 'data/tokenizer.pkl'
