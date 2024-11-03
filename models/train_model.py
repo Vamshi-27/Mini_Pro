@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings("ignore")
+
 import os
 import pickle
 import numpy as np
@@ -10,6 +13,7 @@ from keras.models import Model
 from keras.callbacks import ModelCheckpoint
 from PIL import Image
 from define_model import define_model
+
 
 # Paths
 images_path = 'data/Flicker8k_Dataset'
