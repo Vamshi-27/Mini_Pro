@@ -38,9 +38,9 @@ def preprocess_text(captions):
 
 # Extract features using VGG16
 def extract_features(directory):
-    model = VGG16()
-    model.layers.pop()
+    model = VGG16(include_top=False, input_shape=(224, 224, 3))
     model = Model(inputs=model.inputs, outputs=model.layers[-1].output)
+    model.compile(optimizer='adam', loss='categorical_crossentropy')
     features = {}
     for name in os.listdir(directory):
         img_path = os.path.join(directory, name)
