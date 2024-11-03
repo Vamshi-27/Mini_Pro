@@ -91,3 +91,9 @@ X1, X2, y = create_sequences(captions, features, tokenizer, max_length)
 model = define_model(vocab_size, max_length)
 checkpoint = ModelCheckpoint(model_path, save_best_only=True, monitor='loss', mode='min')
 model.fit([X1, X2], y, epochs=20, callbacks=[checkpoint], verbose=1)
+
+'''
+print("Shape of X1 (image features):", X1.shape)  # Should be (num_samples, 4096)
+print("Shape of X2 (caption sequences):", X2.shape)  # Should be (num_samples, max_length)
+print("Shape of y (target words):", y.shape)  # Should be (num_samples, vocab_size)
+'''
