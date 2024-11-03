@@ -6,7 +6,7 @@ from keras.models import Model
 from PIL import Image
 
 # Define the image directory and output pickle file path
-images_path = 'D:/SIC/Flickr8k_Dataset'
+images_path = 'data/Flicker8k_Dataset'
 output_path = 'data/features.pkl'
 
 def extract_features(directory):
