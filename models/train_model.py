@@ -1,6 +1,12 @@
 import warnings
 warnings.filterwarnings("ignore")
 
+import pickle
+
+# Load extracted features
+with open('data/features.pkl', 'rb') as f:
+    features = pickle.load(f)
+
 import os
 import pickle
 import numpy as np
