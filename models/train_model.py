@@ -5,7 +5,7 @@ from keras.applications.vgg16 import VGG16
 from keras.preprocessing.sequence import pad_sequences
 from keras.utils import to_categorical
 from keras.models import load_model
-from keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.text import Tokenizer
 from keras.models import Model
 from keras.callbacks import ModelCheckpoint
 from PIL import Image
